@@ -1,0 +1,8 @@
+[user]
+  signingkey = 8BA25545866EADCD
+[credential]
+  helper = osxkeychain
+[gpg]
+  program = /usr/local/bin/gpg
+[merge]
+  tool = code

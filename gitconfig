@@ -3,9 +3,14 @@
   email = matthew.a.turney@gmail.com
   logallrefupdates = true
   useconfigonly = true
-  signingkey = 8BA25545866EADCD
 [includeIf "gitdir:~/Workspace/socialtables/"]
   path = .gitconfig-socialtables
+[includeIf "gitdir:/Users/"]
+  path = ~/.gitconfig-macos
+[includeIf "gitdir:C:/"]
+  path = ~/.gitconfig-windows
+[includeIf "gitdir:/home/"]
+  path = ~/.gitconfig-linux
 [core]
   filemode = true
   excludesfile = ~/.gitignore_global
@@ -13,11 +18,10 @@
   disambiguate = commit
   pager = diff-so-fancy | less --tabs=4 -RFX
   ignorecase = false
-[merge]
-  # tool = vimdiff
-  tool = code
 [mergetool "code"]
   cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+[mergetool "vim"]
+  cmd = vimdiff $REMOTE $LOCAL $BASE $MERGED
 [rebase]
   autoSquash = true
   autoStash = true
@@ -33,8 +37,6 @@
 [filter "media"]
   clean = git-media-clean %f
   smudge = git-media-smudge %f
-[credential]
-  helper = osxkeychain
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
@@ -49,8 +51,6 @@
 [interactive]
   # See https://github.com/so-fancy/diff-so-fancy/issues/296
   # diffFilter = diff-so-fancy
-[gpg]
-  program = /usr/local/bin/gpg
 [color "diff-highlight"]
   oldNormal = red bold
   oldHighlight = red bold 52

@@ -80,7 +80,10 @@ fi
 ### ZSH configuration
 setopt dotglob
 
-# disable autocorrect
+# Allow comments in interactive mode, useful for tmux automation
+setopt interactivecomments
+
+# Disable autocorrect
 unsetopt correct_all
 
 ### Initiallize oh-my-zsh
@@ -130,6 +133,9 @@ if [[ "$_macos" == "true" ]]; then
   if [ -d "$HOME/Library/Android/sdk/platform-tools" ]; then
     export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
   fi
+
+  # File watchers need a higher limit or they fail on large projects
+  ulimit -n 10240
 fi
 
 # TODO: update these
