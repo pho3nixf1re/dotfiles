@@ -59,22 +59,22 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
+asdf brew \
 ssh-agent gpg-agent \
 vi-mode tmux autojump \
 encode64 extract urltools \
 git git-extras gitignore git-escape-magic \
 docker docker-compose \
 node npm yarn \
-python pip \
-asdf
+python pip
 )
 
 if [[ "$_macos" == "true" ]]; then
-  plugins+=(macos brew adb)
+  plugins+=(macos adb)
 fi
 
 if [[ "$_linux" == "true" ]]; then
-  plugins+=(brew)
+  # plugins+=(brew)
 fi
 
 ### ZSH configuration
