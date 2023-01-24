@@ -1,5 +1,3 @@
-[user]
-  signingkey = 8BA25545866EADCD
 [credential]
   helper = osxkeychain
 [gpg]

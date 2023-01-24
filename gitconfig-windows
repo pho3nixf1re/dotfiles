@@ -1,7 +1,6 @@
 [credential]
   helper = manager
 [gpg]
-  # TODO: how does this work on Windows?!
-  program = /usr/bin/gpg
+  program = gpg
 [merge]
   tool = code

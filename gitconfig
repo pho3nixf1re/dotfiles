@@ -5,12 +5,14 @@
   useconfigonly = true
 [includeIf "gitdir:~/Workspace/socialtables/"]
   path = .gitconfig-socialtables
-[includeIf "gitdir:/Users/"]
+[includeIf "gitdir:%(prefix)/Users/"]
   path = ~/.gitconfig-macos
 [includeIf "gitdir:C:/"]
   path = ~/.gitconfig-windows
-[includeIf "gitdir:/home/"]
+[includeIf "gitdir:%(prefix)/home/"]
   path = ~/.gitconfig-linux
+[include]
+  path = ~/.gitconfig-local
 [core]
   filemode = true
   excludesfile = ~/.gitignore_global
