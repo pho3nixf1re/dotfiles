@@ -11,6 +11,12 @@
 - [starship](https://starship.rs/): `brew install starship`
 - [nvim](https://neovim.io/): `brew install neovim`
 
+## Git commit signing
+
+1. Install gnupg: `brew install gpg`
+2. Generate new key: `gpg --key-gen-full`
+3. Add to user settings in `.gitconfig-local` which is not checked in here.
+
 ## Environment secrets
 
 Place environment secrets into the local user `.zprofile` file. These will not
