@@ -40,6 +40,8 @@
   process = git-lfs filter-process
 [commit]
   gpgsign = true
+[gpg]
+  format = ssh
 [stash]
   showPatch = true
 [diff]

@@ -3,7 +3,9 @@
 
 [credential]
   helper = manager
-[gpg]
-  program = gpg
+
+[gpg "ssh"]
+  program = "TBD"
+
 [merge]
   tool = vim
