@@ -10,6 +10,12 @@
 - [nvim](https://neovim.io): `brew install neovim`
 - [spacevim](https://spacevim.org): `curl -sLf https://spacevim.org/install.sh | bash`
 
+## Git configuration dependencies
+
+- [delta](https://dandavison.github.io/delta)
+  - windows: `winget install dandavison.delta`
+  - linux/macos: `brew install git-delta`
+
 ## Git commit signing
 
 1. Install 1password.
