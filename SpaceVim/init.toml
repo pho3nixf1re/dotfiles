@@ -8,50 +8,49 @@
 
 # All SpaceVim option below [option] section
 [options]
-  automatic_update = true
-  # set spacevim theme. by default colorscheme layer is not loaded,
-  # if you want to use more colorscheme, please load the colorscheme
-  # layer
-  # colorscheme = "gruvbox"
-  colorscheme = "NeoSolarized"
-  colorscheme_bg = "dark"
-  enable_guicolors = true
-  # Disable statusline separator, if you want to use other value, please
-  # install nerd fonts
-  statusline_separator = "arrow"
-  statusline_iseparator = "arrow"
-  buffer_index_type = 4
-  enable_tabline_filetype_icon = true
-  enable_statusline_mode = false
-  guifont = "Fira Code:h18"
-  filetree_direction = "left"
+automatic_update = true
+# set spacevim theme. by default colorscheme layer is not loaded,
+# if you want to use more colorscheme, please load the colorscheme
+# layer
+# colorscheme = "gruvbox"
+colorscheme = "NeoSolarized"
+colorscheme_bg = "dark"
+enable_guicolors = true
+# Disable statusline separator, if you want to use other value, please
+# install nerd fonts
+statusline_separator = "arrow"
+statusline_iseparator = "arrow"
+buffer_index_type = 4
+enable_tabline_filetype_icon = true
+enable_statusline_mode = false
+guifont = "Fira Code:h18"
+filetree_direction = "left"
 
 # Enable autocomplete layer
 [[layers]]
-  name = 'autocomplete'
-  auto_completion_return_key_behavior = "complete"
-  auto_completion_tab_key_behavior = "smart"
+name = 'autocomplete'
+auto_completion_return_key_behavior = "complete"
+auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
-  name = 'shell'
-  default_position = 'top'
-  default_height = 30
+name = 'shell'
+default_position = 'top'
+default_height = 30
 
 [[layers]]
-  name = "colorscheme"
+name = "colorscheme"
 
 [[layers]]
-  name = "lang#typescript"
+name = "lang#typescript"
 
 [[layers]]
-  name = "lang#javascript"
+name = "lang#javascript"
 
 [[layers]]
-  name = "git"
+name = "git"
 
 [[layers]]
-  name = "github"
+name = "github"
 
 [[layers]]
-  name = "VersionControl"
-
+name = "VersionControl"
