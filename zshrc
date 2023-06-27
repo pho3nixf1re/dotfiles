@@ -138,6 +138,26 @@ if [[ "$_macos" == "true" ]]; then
   ulimit -n 10240
 fi
 
+### git configuration selection
+if [[ "$_macos" == "true" ]]; then
+ export GIT_CONFIG=~/.gitconfig-macos
+fi
+
+if [[ "$_linux" == "true" ]]; then
+ export GIT_CONFIG=~/.gitconfig-linux
+fi
+###
+
+### SpaceVim python support
+if command -v python3 &>/dev/null; then
+  export PYTHON3_HOST_PROG=$(which python3)
+fi
+
+if command -v python &>/dev/null; then
+  export PYTHON_HOST_PROG=$(which python)
+fi
+### END SpaceVim python support
+
 # TODO: update these
 # Wake on LAN aliases
 # alias wake-mturney-desktop='wakeonlan 04:92:26:6d:ae:1c'
