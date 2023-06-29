@@ -60,7 +60,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
 transfer asdf brew \
-ssh-agent gpg-agent \
+gpg-agent \
 vi-mode tmux autojump \
 encode64 extract urltools \
 git git-extras gitignore git-escape-magic \
