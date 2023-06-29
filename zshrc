@@ -157,13 +157,3 @@ if command -v python &>/dev/null; then
   export PYTHON_HOST_PROG=$(which python)
 fi
 ### END SpaceVim python support
-
-# TODO: update these
-# Wake on LAN aliases
-# alias wake-mturney-desktop='wakeonlan 04:92:26:6d:ae:1c'
-# alias wake-bjturney-desktop='wakeonlan 00:d8:61:ab:4e:1c'
-
-### Cvent
-alias copy-migrated-properties="aws s3api list-objects-v2 --bucket core-socialtables-prod-st-visualizer-properties-us-east-1 --profile core-socialtables-prod --prefix 4.27.2- | jq '.Contents[].Key' | sed -E 's/\"4\.27\.2-([0-9]+)_.*\"/\1/g' | uniq | pbcopy"
-
-### END Cvent
