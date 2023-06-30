@@ -5,7 +5,4 @@
   helper = manager
 
 [gpg "ssh"]
-  program = "TBD"
-
-[merge]
-  tool = code
+  program = "~/AppData/Local/1Password/app/8/op-ssh-sign.exe"

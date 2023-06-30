@@ -14,6 +14,8 @@
   disambiguate = commit
   pager = delta
   ignorecase = false
+[merge]
+  tool = code
 [mergetool "code"]
   cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [mergetool "vim"]
