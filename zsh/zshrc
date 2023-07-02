@@ -64,17 +64,13 @@ gpg-agent \
 vi-mode tmux autojump \
 encode64 extract urltools \
 git git-extras gitignore git-escape-magic \
-docker docker-compose \
+podman docker-compose \
 node npm yarn \
 python pip
 )
 
 if [[ "$_macos" == "true" ]]; then
   plugins+=(macos adb)
-fi
-
-if [[ "$_linux" == "true" ]]; then
-  # plugins+=(brew)
 fi
 
 ### ZSH configuration
