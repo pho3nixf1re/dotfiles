@@ -35,7 +35,7 @@ rotz sync
 
 ## Shell dependencies
 
-These should be setup to install using `rotz install`.
+These should install using `rotz install`.
 
 - [zshell](https://www.zsh.org/): `brew install zsh`
   - on linux it may be best to use native package then run `chsh -s /path/to/zsh`
@@ -60,7 +60,7 @@ These should be setup to install using `rotz install`.
 ## Environment secrets
 
 Place environment secrets into the local user files (`.zprofile` or
-`Microsoft.PowerShell_profile.ps1`). These will not live here except to be
+`profile.local.ps1`). These will not live here except to be
 documented if needed during shell initialization.
 
 [rotz]: https://volllly.github.io/rotz
