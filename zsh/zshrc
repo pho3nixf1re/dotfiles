@@ -64,7 +64,7 @@ gpg-agent \
 vi-mode tmux autojump \
 encode64 extract urltools \
 git git-extras gitignore git-escape-magic \
-podman docker-compose \
+podman podman-compose \
 node npm yarn \
 python pip
 )
