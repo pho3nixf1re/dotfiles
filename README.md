@@ -7,10 +7,11 @@ This repo uses [rotz] to bootstrap and manage the configuration files
 
 Currently [rotz] requires [git] to be installed as a pre-requisite.
 
-1. Download the [latest release] for your platform.
+1. Download the [latest
+   release](https://github.com/volllly/rotz/releases/latest) for your platform.
    - [Windows](https://github.com/volllly/rotz/releases/latest/download/rotz-x86_64-pc-windows-msvc.zip)
    - [MacOS Intel](https://github.com/volllly/rotz/releases/latest/download/rotz-x86_64-apple-darwin.zip)
-   - [Linux](https://github.com/volllly/rotz/releases/download/v0.9.3/rotz-x86_64-unknown-linux-gnu.zip)
+   - [Linux](https://github.com/volllly/rotz/releases/latest/download/rotz-x86_64-unknown-linux-gnu.zip)
 2. Unpack `rotz.exe`. Optionally place this in a location on your PATH.
 3. Run `rotz clone git@github.com:pho3nixf1re/dotfiles.git`
 
