@@ -1,0 +1,8 @@
+global:
+  links:
+    zshrc: ~/.zshrc
+  depends:
+    - ohmyzsh
+
+windows:
+  installs: false

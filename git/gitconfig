@@ -4,7 +4,7 @@
   logallrefupdates = true
   useconfigonly = true
 [includeIf "gitdir:~/Workspace/socialtables/"]
-  path = .gitconfig-socialtables
+  path = ~/.dotfiles/git/gitconfig-socialtables
 [include]
   path = ~/.gitconfig-local
 [core]
