@@ -1,0 +1,15 @@
+global:
+  links:
+    init.toml: ~/.SpaceVim.d/init.toml
+  installs: python -m pip install pynvim
+  depends:
+    - neovim
+    - python
+
+windows:
+  installs:
+    cmd: Invoke-WebRequest -Uri "https://raw.githubusercontent.com/SpaceVim/SpaceVim/master/docs/install.cmd" -UseBasicParsing | Select-Object -ExpandProperty Content | Invoke-Expression
+
+linux|darwin:
+  installs:
+    cmd: curl -sLf https://raw.githubusercontent.com/SpaceVim/SpaceVim/master/docs/install.sh | bash

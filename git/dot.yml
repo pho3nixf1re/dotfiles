@@ -1,0 +1,17 @@
+global:
+  links:
+    gitignore: ~/.gitignore
+  depends:
+    - delta
+
+windows:
+  links:
+    gitconfig-windows: ~/.gitconfig
+
+linux:
+  links:
+    gitconfig-linux: ~/.gitconfig
+
+darwin:
+  links:
+    gitconfig-darwin: ~/.gitconfig
