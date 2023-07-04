@@ -1,2 +1,6 @@
 windows:
   installs: false
+
+linux|darwin:
+  links:
+    tool-versions: ~/.tool-versions
