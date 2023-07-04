@@ -1,8 +1,9 @@
-global:
+windows:
+  installs: false
+  links: false
+
+linux|darwin:
   links:
     zshrc: ~/.zshrc
   depends:
     - ohmyzsh
-
-windows:
-  installs: false
