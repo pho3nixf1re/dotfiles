@@ -136,11 +136,3 @@ if [[ "$_macos" == "true" ]]; then
   # File watchers need a higher limit or they fail on large projects
   ulimit -n 10240
 fi
-
-### SpaceVim python support
-if command -v python3 &>/dev/null; then
-  export PYTHON3_HOST_PROG=$(which python3)
-elif command -v python &>/dev/null; then
-  export PYTHON_HOST_PROG=$(which python)
-fi
-### END SpaceVim python support

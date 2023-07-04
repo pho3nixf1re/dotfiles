@@ -1,6 +1,7 @@
 global:
   links:
     init.toml: ~/.SpaceVim.d/init.toml
+    SpaceVim.ps1: ~/.config/powershell/profile.d/SpaceVim.ps1
   installs: python -m pip install pynvim
   depends:
     - neovim
@@ -13,3 +14,5 @@ windows:
 linux|darwin:
   installs:
     cmd: curl -sLf https://raw.githubusercontent.com/SpaceVim/SpaceVim/master/docs/install.sh | bash
+  links:
+    SpaceVim.zsh: ~/.config/zsh/SpaceVim.zsh
