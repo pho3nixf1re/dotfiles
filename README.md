@@ -1,7 +1,7 @@
 # Dotfiles
 
 This repo uses [rotz] to bootstrap and manage the configuration files
-(dotfiles).
+(dotfiles). It works cross-platform on Windows, MacOS, and Linux.
 
 ## Setup
 

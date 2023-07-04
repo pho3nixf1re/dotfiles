@@ -85,6 +85,9 @@ unsetopt correct_all
 ### Initiallize oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
+# Include local configuration
+for zshSource in ~/.config/zsh/*zsh ; do source $zshSource ; done
+
 # Add user bin to PATH
 if [ -d "$HOME/bin" ]; then
   export PATH="$PATH:$HOME/bin"
