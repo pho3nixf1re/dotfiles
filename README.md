@@ -60,8 +60,8 @@ These should install using `rotz install`.
 
 ## Environment secrets
 
-Place environment secrets into the local user files (`.zprofile` or
-`profile.local.ps1`). These will not live here except to be
+Place environment secrets into the local user files (`.config/zsh/*.zsh`,
+`.config/powershell/profile.d/*.ps1`). These will not live here except to be
 documented if needed during shell initialization.
 
 [rotz]: https://volllly.github.io/rotz
