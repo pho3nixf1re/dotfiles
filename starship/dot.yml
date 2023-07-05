@@ -1,2 +1,4 @@
 links:
   starship.toml: ~/.config/starship.toml
+  starship.zsh: ~/.config/zsh/starship.zsh
+  starship.ps1: ~/.config/powershell/profile.d/starship.ps1

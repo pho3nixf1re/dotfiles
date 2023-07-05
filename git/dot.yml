@@ -11,7 +11,9 @@ windows:
 linux:
   links:
     gitconfig-linux: ~/.gitconfig
+    git.zsh: ~/.config/zsh/git.zsh
 
 darwin:
   links:
     gitconfig-darwin: ~/.gitconfig
+    git.zsh: ~/.config/zsh/git.zsh

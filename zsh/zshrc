@@ -97,13 +97,6 @@ if [ -d "$HOME/.local/bin" ]; then
   export PATH="$PATH:$HOME/.local/bin"
 fi
 
-# Starship prompt initialization
-eval "$(starship init zsh)"
-
-# Replace vim with nvim 😎
-export EDITOR=nvim
-alias vim='nvim'
-
 # Allow GNUPGP to pop a dialog for passphrase
 export GPG_TTY=`tty`
 
@@ -113,10 +106,6 @@ alias less='less -r'
 # npm aliases
 alias nr='npm run'
 alias ni='npm install'
-
-# git aliases
-alias gcfr='git commit --fixup @ && git rebase -i @~2'
-alias ghpr='gh pr create -f'
 
 if [[ "$_macos" == "true" ]]; then
   # Fix pyenv to use openssl from homebrew

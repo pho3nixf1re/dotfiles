@@ -1,0 +1,7 @@
+global:
+  links:
+    neovim.ps1: ~/.config/powershell/profile.d/neovim.ps1
+
+linux|darwin:
+  links:
+    neovim.zsh: ~/.config/zsh/neovim.zsh
