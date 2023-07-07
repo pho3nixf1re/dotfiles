@@ -5,7 +5,7 @@
   helper = manager
 
 [gpg "ssh"]
-  program = "TBD"
+  program = "/opt/1Password/op-ssh-sign"
 
 [merge]
   tool = vim
