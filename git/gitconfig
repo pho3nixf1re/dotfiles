@@ -9,7 +9,7 @@
   path = ~/.gitconfig-local
 [core]
   filemode = true
-  excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore
   editor = vim -f
   disambiguate = commit
   pager = delta
