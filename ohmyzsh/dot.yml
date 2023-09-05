@@ -5,6 +5,3 @@ linux|darwin:
   installs:
     cmd: >-
       sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      rm -r ~/.oh-my-zsh/custom/plugins
-  links:
-    custom/plugins: ~/.oh-my-zsh/custom/plugins
