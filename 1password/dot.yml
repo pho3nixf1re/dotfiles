@@ -1,0 +1,3 @@
+linux|darwin:
+  links:
+    1password.zsh: ~/.config/zsh/1password.zsh
