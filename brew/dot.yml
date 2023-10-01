@@ -6,3 +6,6 @@ linux|darwin:
     cmd: >-
       /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
       brew install coreutils
+      brew tap homebrew/bundle
+  link:
+    Brewfile: ~/.Brewfile

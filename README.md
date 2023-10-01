@@ -22,10 +22,18 @@ To link dotfiles:
 ```zsh
 rotz link
 ```
+
 To install dependencies:
 
 ```zsh
 rotz install
+```
+
+If you are on MacOS or Linux you may want to install all of the dependencies. Be
+sure to run the link step first.
+
+```
+brew bundle --global
 ```
 
 To update dotfiles:
