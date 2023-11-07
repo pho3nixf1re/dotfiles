@@ -4,5 +4,6 @@ windows:
 linux|darwin:
   links:
     zshrc: ~/.zshrc
+    port-killer.zsh: ~/.config/zsh/port-killer.zsh
   depends:
     - ohmyzsh
