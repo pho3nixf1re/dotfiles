@@ -109,6 +109,12 @@ alias less='less -r'
 alias nr='npm run'
 alias ni='npm install'
 
+if [[ "$_wsl" == "true" ]]; then
+  # Use Windows SSH client for 1password ssh-agent
+  alias ssh='ssh.exe'
+  alias ssh-add='ssh-add.exe'
+fi
+
 if [[ "$_macos" == "true" ]]; then
   # Fix pyenv to use openssl from homebrew
   alias pyenv='CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" pyenv'
