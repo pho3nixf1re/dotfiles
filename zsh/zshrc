@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+export _linux=_wsl=_macos=_cywin=_mingw=_impossible=_freebsd="false"
+
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   _linux="true"
 
