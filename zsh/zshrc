@@ -6,7 +6,7 @@ export _linux=_wsl=_macos=_cywin=_mingw=_impossible=_freebsd="false"
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   _linux="true"
 
-  if [[ `uname -a` == *"WSL"* ]]; then
+  if [[ $(uname -a) == *"WSL"* ]]; then
     _wsl="true"
   fi
 
@@ -61,14 +61,14 @@ COMPLETION_WAITING_DOTS="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(
-transfer brew asdf \
-gpg-agent \
-vi-mode tmux autojump \
-encode64 extract urltools \
-git git-extras gitignore git-escape-magic \
-podman \
-node npm yarn \
-python pip
+  transfer brew asdf
+  gpg-agent
+  vi-mode tmux autojump
+  encode64 extract urltools
+  git git-extras gitignore git-escape-magic
+  podman
+  node npm yarn
+  python pip
 )
 
 if [[ "$_macos" == "true" ]]; then
@@ -88,7 +88,7 @@ unsetopt correct_all
 source $ZSH/oh-my-zsh.sh
 
 # Include local configuration
-for zshSource in ~/.config/zsh/*zsh ; do source $zshSource ; done
+for zshSource in ~/.config/zsh/*zsh; do source $zshSource; done
 
 # Add user bin to PATH
 if [ -d "$HOME/bin" ]; then
@@ -100,7 +100,7 @@ if [ -d "$HOME/.local/bin" ]; then
 fi
 
 # Allow GNUPGP to pop a dialog for passphrase
-export GPG_TTY=`tty`
+export GPG_TTY=$(tty)
 
 # less ascii colors
 alias less='less -r'
