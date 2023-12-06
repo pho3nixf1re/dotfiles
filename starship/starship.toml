@@ -24,27 +24,21 @@ symbol = " "
 
 # harware config
 [battery]
-unknown_symbol = " "
-empty_symbol = " "
-discharging_symbol = " "
-charging_symbol = " "
-full_symbol = " "
 
-  [[battery.display]]
-  threshold = 10
-  style = "bold fg:red"
+[[battery.display]]
+threshold = 10
+style = "bold fg:red"
 
-  [[battery.display]]
-  threshold = 30
-  style = "fg:#ff8800"
+[[battery.display]]
+threshold = 30
+style = "fg:#ff8800"
 
-  [[battery.display]]
-  threshold = 50
-  style = "fg:yellow"
+[[battery.display]]
+threshold = 50
+style = "fg:yellow"
 
 [memory_usage]
 disabled = true
-symbol = " "
 
 [time]
 disabled = false
@@ -96,65 +90,9 @@ symbol = " "
 # variable = "EDITOR"
 # format = "editing with [$env_value]($style)"
 
-# techno specific
 [aws]
 symbol = " "
 format = 'on [$symbol$profile(\($region\))]($style) '
-disabled = true
-
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
-
-[docker_context]
-symbol = " "
-
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[golang]
-symbol = " "
-
-[hg_branch]
-symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[nim]
-symbol = " "
-
-[nix_shell]
-symbol = " "
-
-[nodejs]
-symbol = " "
 
 [package]
-symbol = " "
-
-[perl]
-symbol = " "
-
-[php]
-symbol = " "
-
-[python]
-symbol = " "
-
-[ruby]
-symbol = " "
-
-[swift]
-symbol = "ﯣ "
-
-[rust]
-symbol = " "
+display_private = true
