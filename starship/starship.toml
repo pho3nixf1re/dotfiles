@@ -6,11 +6,11 @@ command_timeout = 500
 
 [directory]
 fish_style_pwd_dir_length = 1
-read_only = " "
+read_only = "  "
 style = "#4169e1"
 truncate_to_repo = true
 truncation_length = 0
-format = "[](bg:$style fg:black)[$path[$read_only]($read_only_style)](bg:$style)[](fg:$style) "
+format = "[](bg:$style fg:black)[$path[$read_only]($read_only_style bg:$style)](bg:$style)[](fg:$style) "
 
 [cmd_duration]
 min_time = 50
