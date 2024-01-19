@@ -3,16 +3,24 @@
 This repo uses [rotz] to bootstrap and manage the configuration files
 (dotfiles). It works cross-platform on Windows, MacOS, and Linux.
 
+## Expected dependencies
+
+These should be installed first.
+
+- [Homebrew]
+- [git] (usually via `brew`)
+
 ## Setup
 
 Currently [rotz] requires [git] to be installed as a pre-requisite.
 
 1. Download the [latest
    release](https://github.com/volllly/rotz/releases/latest) for your platform.
+   - Homebrew via [volllly/tap](https://github.com/volllly/homebrew-tap): `brew tap volllly/tap` then `brew install rotz`
    - [Windows](https://github.com/volllly/rotz/releases/latest/download/rotz-x86_64-pc-windows-msvc.zip)
    - [MacOS Intel](https://github.com/volllly/rotz/releases/latest/download/rotz-x86_64-apple-darwin.zip)
    - [Linux](https://github.com/volllly/rotz/releases/latest/download/rotz-x86_64-unknown-linux-gnu.zip)
-2. Unpack `rotz.exe`. Optionally place this in a location on your PATH.
+2. Unpack the `rotz` binary. Optionally place this in a location on your PATH.
 3. Run `rotz clone git@github.com:pho3nixf1re/dotfiles.git`
 
 ## Usage
@@ -75,3 +83,4 @@ documented if needed during shell initialization.
 [rotz]: https://volllly.github.io/rotz
 [1password]: https://1password.com
 [git]: https://git-scm.com
+[Homebrew]: https://brew.sh
