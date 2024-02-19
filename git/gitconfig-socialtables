@@ -1,3 +1,6 @@
 [user]
   name = Matthew Turney
   email = mturney@cvent.com
+
+[core]
+  sshCommand = ssh -F ~/.ssh/ssh_config_cvent

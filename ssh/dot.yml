@@ -1,0 +1,4 @@
+global:
+  links:
+    ssh_config: ~/.ssh/config
+    ssh_config_cvent: ~/.ssh/ssh_config_cvent
