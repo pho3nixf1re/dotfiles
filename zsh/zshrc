@@ -133,3 +133,7 @@ if [[ "$_macos" == "true" ]]; then
   # File watchers need a higher limit or they fail on large projects
   ulimit -n 10240
 fi
+
+# pretty print all Pino logs
+export PRETTY_LOGS=true
+
