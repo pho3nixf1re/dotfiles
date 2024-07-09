@@ -4,3 +4,7 @@
 
 [core]
   sshCommand = ssh -F ~/.ssh/ssh_config_cvent
+
+# Used to include signing key specific to Social Tables and Cvent
+[include]
+  path = ~/.gitconfig-socialtables-local

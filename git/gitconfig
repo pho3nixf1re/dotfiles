@@ -3,10 +3,11 @@
   email = matthew.a.turney@gmail.com
   logallrefupdates = true
   useconfigonly = true
-[includeIf "gitdir:~/Workspace/socialtables/"]
-  path = ~/.dotfiles/git/gitconfig-socialtables
+# Used to include signing key
 [include]
   path = ~/.gitconfig-local
+[includeIf "gitdir:~/Workspace/socialtables/"]
+  path = ~/.dotfiles/git/gitconfig-socialtables
 [core]
   filemode = true
   excludesfile = ~/.gitignore
