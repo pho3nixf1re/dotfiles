@@ -67,12 +67,12 @@ plugins=(
   encode64 extract urltools
   git git-extras gitignore git-escape-magic
   docker docker-compose
-  node npm yarn
+  node npm yarn pnpm
   python pip
 )
 
 if [[ "$_macos" == "true" ]]; then
-  plugins+=(macos adb)
+  plugins+=(macos)
 fi
 
 ### ZSH configuration
