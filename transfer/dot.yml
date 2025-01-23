@@ -1,0 +1,3 @@
+linux|darwin:
+  links:
+    transfer.zsh: ~/.config/zsh/transfer.zsh
