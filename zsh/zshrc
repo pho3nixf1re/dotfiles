@@ -67,7 +67,7 @@ plugins=(
   encode64 extract urltools
   git git-extras gitignore git-escape-magic
   docker docker-compose
-  node npm yarn pnpm
+  node npm yarn
   python pip
 )
 
