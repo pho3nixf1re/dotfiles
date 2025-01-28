@@ -4,8 +4,5 @@
 [credential]
   helper = manager
 
-[gpg "ssh"]
-  program = "/opt/1Password/op-ssh-sign"
-
 [merge]
   tool = vim
