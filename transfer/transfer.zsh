@@ -1,3 +1,5 @@
+TRANSFERSH_HOST="https://transfer.feliciterra.com"
+
 transfer() {
   if [ -z "$TRANSFER_USER" ] || [ -z "$TRANSFER_PASS" ]; then
     echo "TRANSFER_USER and TRANSFER_PASS must be set in the environment." >&2
@@ -36,6 +38,6 @@ Examples:
     set -- cat
   fi
 
-  url=$("$@" | curl --silent --show-error --progress-bar --upload-file "-" "https://transfer.sh/$file_name")
+  url=$("$@" | curl --silent --show-error --progress-bar -u "$TRANSFER_USER:$TRANSFER_PASS" --upload-file "-" "$TRANSFERSH_HOST/$file_name")
   echo "$url"
 }
