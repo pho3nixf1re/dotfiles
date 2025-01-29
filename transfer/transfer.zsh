@@ -16,23 +16,26 @@ Examples:
     return 1
   fi
 
-  if tty -s; then
-    file="$1"
-    file_name=$(basename "$file")
+  file_name=$(basename "$1")
 
+  if [ -t 0 ]; then
+    file="$1"
     if [ ! -e "$file" ]; then
       echo "$file: No such file or directory" >&2
       return 1
     fi
 
     if [ -d "$file" ]; then
+      cd "$file" || return 1
       file_name="$file_name.zip"
-      (cd "$file" && zip -r -q - .) | curl --progress-bar --upload-file "-" -u "$TRANSFER_USER:$TRANSFER_PASS" "https://transfer.feliciterra.com/$file_name" | tee /dev/null
+      set -- zip -r -q - .
     else
-      cat "$file" | curl --progress-bar --upload-file "-" -u "$TRANSFER_USER:$TRANSFER_PASS" "https://transfer.feliciterra.com/$file_name" | tee /dev/null
+      set -- cat "$file"
     fi
   else
-    file_name=$1
-    curl --progress-bar --upload-file "-" -u "$TRANSFER_USER:$TRANSFER_PASS" "https://transfer.feliciterra.com/$file_name" | tee /dev/null
+    set -- cat
   fi
+
+  url=$("$@" | curl --silent --show-error --progress-bar --upload-file "-" "https://transfer.sh/$file_name")
+  echo "$url"
 }
